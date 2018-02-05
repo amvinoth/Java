@@ -1,6 +1,17 @@
 <p>Hi</p>
-<form>
-<input type="text" >
-<input type="email" >
-
+<form #myForm="ngForm" (ngSubmit)="submit(myForm.form)">
+  <div class="form-group">
+    <label for="td_name" >Name</label>
+    <input type="text" class="form-control" id="td_name"
+           name="name" [ngModel]="''" required>
+  </div>
+  <div class="form-group">
+    <label for="td_quantity">Quantity</label>
+    <input type="number" class="form-control" id="td_quantity"
+           name="quantity" [ngModel]="123">
+  </div>
+  <div class="form-group">
+    <input type="submit" class="form-control" value="Submit"
+           [disabled]="myForm.invalid">
+  </div>
 </form>
