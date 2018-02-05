@@ -63,6 +63,10 @@ export class AppComponent {
 
     }
   }
+  
+  haiDisplay(){
+	  console.log("Hai");
+  }
   httpRequestWithParameter():any{
     console.log("in service part 2 with params");
     return this.http.get('http://localhost:8060/RESTExample/student', {
