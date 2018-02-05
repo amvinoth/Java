@@ -5,6 +5,7 @@ export class Movie {
     public language: string;
     public director: string;
     public location: string;
+	public new1:string;
     constructor(
         id: number,
         name: string,
