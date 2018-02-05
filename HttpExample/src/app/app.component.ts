@@ -51,6 +51,18 @@ export class AppComponent {
 
     }
   }
+  display1(){
+    if(this.data!=null){
+      console.log(this.data);
+
+    }
+  }
+  display2(){
+    if(this.data!=null){
+      console.log(this.data);
+
+    }
+  }
   httpRequestWithParameter():any{
     console.log("in service part 2 with params");
     return this.http.get('http://localhost:8060/RESTExample/student', {
